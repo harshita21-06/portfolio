@@ -30,20 +30,21 @@ window.PORTFOLIO = {
 
   skillGroups: [
     { label: "Languages", items: [
-      { n: "Java", i: "java" }, { n: "JavaScript (ES6+)", i: "javascript" }, { n: "HTML5", i: "html5" },
-      { n: "CSS3", i: "css" }, { n: "MySQL", i: "mysql" }, { n: "OracleDB", i: "oracle" } ] },
-    { label: "Frontend", items: [
-      { n: "React.js", i: "react" }, { n: "React Native", i: "react" }, { n: "Redux Toolkit", i: "redux" },
-      { n: "Material UI", i: "mui" }, { n: "Styled-Components", i: "styledcomponents" }, { n: "Storybook", i: "storybook" },
-      { n: "Design systems" }, { n: "Core Web Vitals", i: "webvitals" } ] },
-    { label: "Backend & integration", items: [
-      { n: "REST APIs", i: "rest" }, { n: "OpenAI API", i: "openai" }, { n: "LLM integration" }, { n: "JWT", i: "jwt" } ] },
-    { label: "Tools & DevOps", items: [
-      { n: "Git & GitHub", i: "github" }, { n: "Monorepos", i: "monorepo" }, { n: "AWS S3" },
-      { n: "Figma", i: "figma" }, { n: "Cursor", i: "cursor" }, { n: "BrowserStack" }, { n: "Agile / Scrum" } ] },
+      { n: "JavaScript (ES6+)", i: "javascript" }, { n: "Java", i: "java" }, { n: "SQL", i: "mysql" },
+      { n: "HTML5", i: "html5" }, { n: "CSS3", i: "css" }, { n: "SCSS" }, { n: "OracleDB", i: "oracle" } ] },
+    { label: "Frontend & Mobile", items: [
+      { n: "React.js", i: "react" }, { n: "React Native", i: "react" }, { n: "Expo" }, { n: "Next.js" },
+      { n: "Redux Toolkit", i: "redux" }, { n: "Material UI", i: "mui" }, { n: "Styled-Components", i: "styledcomponents" },
+      { n: "Storybook", i: "storybook" }, { n: "Design systems" }, { n: "Core Web Vitals", i: "webvitals" } ] },
+    { label: "Backend & AI", items: [
+      { n: "Node.js" }, { n: "Express.js" }, { n: "REST APIs", i: "rest" }, { n: "JWT", i: "jwt" },
+      { n: "OpenAI API", i: "openai" }, { n: "LLM integration" }, { n: "MCP" }, { n: "Spring Boot" } ] },
+    { label: "Tooling", items: [
+      { n: "Git & GitHub", i: "github" }, { n: "Lerna (monorepos)", i: "monorepo" }, { n: "Webpack" }, { n: "Jenkins" },
+      { n: "Husky" }, { n: "Jest" }, { n: "AWS S3" }, { n: "Figma", i: "figma" }, { n: "Cursor", i: "cursor" }, { n: "BrowserStack" } ] },
     { label: "Practices", items: [
       { n: "Component architecture" }, { n: "Performance optimisation" }, { n: "Responsive design" },
-      { n: "RBAC" }, { n: "Unit testing" }, { n: "Code review" } ] },
+      { n: "RBAC" }, { n: "Unit testing" }, { n: "Code review" }, { n: "Agile / Scrum" } ] },
   ],
 
   projects: [
