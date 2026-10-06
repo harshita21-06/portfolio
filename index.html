@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshita Purwar — Software Developer</title>
+  <meta name="description" content="Harshita Purwar — Software Developer at CarTrade Tech. Design systems, React & React Native, AI-powered interfaces." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>try { var t = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+  <a class="skip" href="#home">Skip to content</a>
+  <div class="scroll-bar" id="scrollBar" aria-hidden="true"></div>
+  <div class="cur-dot" aria-hidden="true"></div>
+  <div class="cur-ring" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="brand" href="#home"><span class="brand-badge">HP</span> Harshita Purwar</a>
+    <nav class="links" id="nav" aria-label="Primary"></nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="theme" aria-label="Toggle theme"></button>
+      <a class="btn line sm" href="assets/harshita_purwar_frontend.pdf" target="_blank" rel="noopener">Resume</a>
+      <button class="icon-btn burger" id="burger" aria-label="Menu"><ion-icon name="menu-outline"></ion-icon></button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <div id="scroll-container" data-scroll-container>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text" data-scroll data-scroll-speed="0.8">
+        <span class="badge"><span class="pin"></span> Open to work</span>
+        <h1>Harshita Purwar</h1>
+        <p class="role">Software Developer <span class="sep">/</span> <span class="hl">CarTrade Tech</span></p>
+        <p class="lede" id="lede"></p>
+        <div class="cta">
+          <a class="btn solid" href="#work">View work <ion-icon name="arrow-forward-outline"></ion-icon></a>
+          <a class="btn line" href="#contact">Get in touch</a>
+        </div>
+        <ul class="socials" id="socials"></ul>
+      </div>
+      <aside class="hero-card code-card" data-scroll data-scroll-speed="2.2">
+        <div class="code-head"><span class="cdot r"></span><span class="cdot y"></span><span class="cdot g"></span><span class="code-file">harshita.js</span></div>
+        <pre class="code"><code id="codeBlock"></code></pre>
+        <span class="code-status"><i></i> Available for new opportunities</span>
+      </aside>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about">
+        <span class="scroll-cue__line"></span>
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <h2 class="h"><span>01</span> About</h2>
+      <div class="about">
+        <div class="about-text">
+          <p>I'm a software developer focused on frontend, with ~2 years at <strong>CarTrade Tech</strong> building CarWale &amp; BikeWale. I specialise in design-system architecture, React &amp; React Native, performance and AI integration.</p>
+          <p>I lead Oxygen design-system work across web and native, drove the MUI migration, automated Figma-to-React, and helped build CarWale's ChatGPT experience — <strong>170+ merged PRs</strong> shipped.</p>
+        </div>
+        <ul class="stats" id="stats"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2 class="h"><span>02</span> Experience</h2>
+      <div class="xp">
+        <div class="roles" id="roles"></div>
+        <div class="xp-side">
+          <div class="pcard"><h3>Education</h3><p class="edu" id="edu"></p></div>
+          <div class="pcard"><h3>Coding profiles</h3><ul class="mini-profiles" id="profiles"></ul></div>
+          <div class="pcard"><h3>Highlights</h3><ul class="wins" id="wins"></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <h2 class="h"><span>03</span> Projects</h2>
+      <div class="chips" id="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="professional">Professional</button>
+        <button class="chip" data-filter="personal">Personal</button>
+      </div>
+      <div class="work-grid" id="projects"></div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="h"><span>04</span> Skills</h2>
+      <div class="skills" id="skillsGrid"></div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="h"><span>05</span> Contact</h2>
+      <div class="contact">
+        <form class="form" id="form" novalidate>
+          <div class="row"><input name="name" placeholder="Name" required /><input name="email" type="email" placeholder="Email" required /></div>
+          <textarea name="message" rows="4" placeholder="Message" required></textarea>
+          <button class="btn solid" type="submit">Send message <ion-icon name="arrow-forward-outline"></ion-icon></button>
+          <p class="fnote" id="fnote" hidden></p>
+        </form>
+        <ul class="contact-info" id="contacts"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot"><p>Harshita Purwar — built with HTML, CSS &amp; JavaScript.</p><a href="#home">Back to top ↑</a></footer>
+  </div>
+
+  <div class="fab" id="fab">
+    <div class="fab-menu" id="fabMenu"></div>
+    <button class="fab-btn" id="fabBtn" aria-expanded="false" aria-controls="fabMenu" aria-label="Quick contact">
+      <ion-icon name="chatbubble-ellipses-outline" class="i-open"></ion-icon>
+      <ion-icon name="close-outline" class="i-close"></ion-icon>
+    </button>
+  </div>
+
+  <script src="shared/data.js"></script>
+  <script src="app.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
